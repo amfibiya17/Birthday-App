@@ -1,6 +1,6 @@
 # Birthday App
 
-## link to the App --> [birthday---app]() <-- link to the App
+## link to the App --> [birthday-app]() <-- link to the App
 ---
 
 - This program asks user's name and a date of birth
