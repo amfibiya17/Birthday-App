@@ -6,18 +6,15 @@
   </head>
 
   <body>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
+  
     <p><% if @birthday.count == 365 %></p>
+    <img src="https://i.postimg.cc/L5FB8DQ1/r-596823-ye9q3.jpg" />
     <h2><%= %> Happy birthday <%= @name %>!</h2>
     <p><% elsif @birthday.count == -1%></p>
+    <img class="img1" src="https://i.postimg.cc/KcfGZzH9/90b73dcd76b0d8ec6b400cd9e869a359.png" />
     <h2><%= %>Wow! You haven't been born yet!</h2>
     <p><% else %></p>
+    <img class="img2" src="https://i.postimg.cc/8cQt9NhM/4f828d05f82b8b7aedfe8be6a7d9d2a3.png" />
     <h2><%= %>Your birthday will be in <%= @birthday.count %> days, <%= @name %>.<h2>
     <p><% end %></p>
 
