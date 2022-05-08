@@ -12,12 +12,14 @@ class App < Sinatra::Base
   post '/name' do
     p params
     session[:birthday] = Birthday.new(params[:birthday_date])
+    session[:name] = params[:name]
     @birthday = session[:birthday]
     redirect to '/birthday'
   end
 
   get '/birthday' do
     @birthday = session[:birthday]
+    @name = session[:name]
     erb :birthday
   end
 

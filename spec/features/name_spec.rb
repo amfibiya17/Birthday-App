@@ -3,7 +3,7 @@ feature "Enter name" do
     visit('/')
     expect(page).to have_content 'Hello there!'
     expect(page).to have_content "What's your name?"
-    fill_in :user, with: 'Slava'
+    fill_in :name, with: 'Slava'
     expect(page).to have_content "When were you born?"
     expect(page).to have_field type: 'date'
     fill_in "birthday_date", with: "10/12/1986"

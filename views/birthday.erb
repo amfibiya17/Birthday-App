@@ -14,11 +14,11 @@
     <br />
 
     <p><% if @birthday.count == 365 %></p>
-    <h2><%= %> Happy birthday Slava!</h2>
+    <h2><%= %> Happy birthday <%= @name %>!</h2>
     <p><% elsif @birthday.count == -1%></p>
     <h2><%= %>Wow! You haven't been born yet!</h2>
     <p><% else %></p>
-    <h2><%= %>Your birthday will be in <%= @birthday.count %> days, Slava.<h2>
+    <h2><%= %>Your birthday will be in <%= @birthday.count %> days, <%= @name %>.<h2>
     <p><% end %></p>
 
     <form action="/">
