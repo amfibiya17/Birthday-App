@@ -1,7 +1,6 @@
 require 'date'
 
 class Birthday
-  DATE_FORMAT = '%d-%m-%Y'
 
   attr_accessor :birthday_date
 
@@ -10,6 +9,7 @@ class Birthday
   end
 
   def count
+    return -1 if Date.parse(birthday_date) > Date.today
     bday = Date.parse(birthday_date)
     this_year = Date.new(Date.today.year, bday.month, bday.day)
     if this_year > Date.today 
